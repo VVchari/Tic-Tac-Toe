@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC-TAC-TOE</title>
+    <script></script>
+    <style>
+.container1{
+    display: flex;
+    justify-content:space-evenly;
+    margin: 15%;
+    margin-bottom: 8%;
+}
+.container2{
+    border-radius: 10px;
+    padding: 10%;
+    text-align: center;
+    border: 2px solid;
+    border-color:#F8D7B0;
+    color: #F8D7B0;
+   
+}
+
+.button{
+    color:white;
+    background-color:transparent;
+    border-radius: 5px;
+    padding: 10px;
+}
+.h2{
+    font-family: 'Courier New', Courier, monospace;
+    color:#F8D7B0;
+}
+.bg{
+    background-size: cover;
+    height: 100vh;
+background-image: url("bg.jpg");
+}
+.input{
+    background-color: transparent;
+    margin-left:5px;
+    border-style: solid;
+    border-color: black;
+    color: white;
+    border-radius: 5px;
+}
+    </style>
+</head>
+<body class="bg"><!--Declare your path Here-->
+<div class="container1">
+    <div class="container2" style="margin-right: 10px;">
+        <h2>Player-1</h2>
+        <form id="form" method="GET" action="Player_vs_Player.html">
+        <p><label for="name1">Name:</label>
+        <input id="name1" type="text" placeholder="Enter player-1 name" name="name1" class="input" required></p>
+       
+        <br>
+
+        <h2>Player-2</h2>
+
+        <p><label for="name2">Name:</label>
+        <input id="name2" type="text" placeholder="Enter player-2 name" name="name2" class="input" required></p>
+       
+        <br>
+        <button type="submit" class="button">Play</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

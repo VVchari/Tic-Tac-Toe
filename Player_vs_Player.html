@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC-TAC-TOE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg">
+    <div class="center">
+        <div class="container">
+    <div>
+        <h1>TIC TAC TOE</h1>
+        <p>Game starts by just TAP on box</p>
+        <p>First player starts as <span>PLAYER X</span> and Second player as <span>PLAYER O</span></p>
+    </div>
+
+    <div style="display: flex; justify-content: space-around;align-items: center;border-color:#F8D7B0;margin-left: 400px;margin-right: 400px; margin-bottom: 10px;border-radius: 15px;border: 2px solid;">
+        <div style="margin-right: 40px;">
+            <h1>Player X</h1>
+        <p id="player1"></p>
+    </div>
+        <div>
+            <h1>Player O</h1>
+            <p id="player2"></p>
+        </div>
+    </div>
+</div>
+    <br>
+    <div class="ui">
+        <div class="row">
+            <input type="text" id="b1" class="box" readonly onclick="myfunction1(); myfunction();">
+            <input type="text" id="b2" class="box" readonly onclick="myfunction2(); myfunction();">
+            <input type="text" id="b3" class="box" readonly onclick="myfunction3(); myfunction();">
+        </div>
+        <div class="row">
+            <input type="text" id="b4" class="box" readonly onclick="myfunction4(); myfunction();">
+            <input type="text" id="b5" class="box" readonly onclick="myfunction5(); myfunction();">
+            <input type="text" id="b6" class="box" readonly onclick="myfunction6(); myfunction();">
+        </div>
+        <div class="row">
+            <input type="text" id="b7" class="box" readonly onclick="myfunction7(); myfunction();">
+            <input type="text" id="b8" class="box" readonly onclick="myfunction8(); myfunction();">
+            <input type="text" id="b9" class="box" readonly onclick="myfunction9(); myfunction();">
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div>
+        <button id="button" onclick="reset()">Reset</button>
+        <br>
+        <p id="text" class="para"></p>
+    </div>
+</div>
+<script src="logic.js"></script>
+</body>
+</html>
